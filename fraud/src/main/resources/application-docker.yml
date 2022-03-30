@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: fraud
+  datasource:
+    username: 'learntocode'
+    url: jdbc:postgresql://postgres:5432/fraud
+    password: 'learntocode'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  zipkin:
+        base-url: http://zipkin:9411
+        
+eureka:
+  client:
+    service-url:
+       defaultZone: http://eureka-server:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+    enabled: false             
+
