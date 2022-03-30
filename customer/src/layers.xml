@@ -17,7 +17,6 @@
     <layerOrder>
         <layer>dependencies</layer>
         <layer>spring-boot-loader</layer>
-        <layer>internal-dependencies</layer>
         <layer>snapshot-dependencies</layer>
         <layer>application</layer>
     </layerOrder>
