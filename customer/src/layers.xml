@@ -12,9 +12,6 @@
         <into layer="snapshot-dependencies">
             <include>*:*:*SNAPSHOT</include>
         </into>
-        <into layer="internal-dependencies">
-            <include>io.learntocode:*</include>
-        </into>
         <into layer="dependencies" />
     </dependencies>
     <layerOrder>
